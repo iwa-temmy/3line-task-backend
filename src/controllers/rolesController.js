@@ -1,5 +1,7 @@
 const roles = require("../data/roles");
 
+const DELAY_MS = 2000;
+
 // GET /api/roles — return all roles with summary display format
 const getAllRoles = (req, res) => {
   const { status, type } = req.query;
@@ -36,11 +38,13 @@ const getAllRoles = (req, res) => {
     };
   });
 
-  return res.status(200).json({
-    success: true,
-    count: result.length,
-    data: result,
-  });
+  setTimeout(() => {
+    return res.status(200).json({
+      success: true,
+      count: result.length,
+      data: result,
+    });
+  }, DELAY_MS);
 };
 
 // GET /api/roles/:id — return a single role by ID
