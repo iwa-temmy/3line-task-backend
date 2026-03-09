@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
+<img src="./src/assets/logo.svg " alt="Logo" height=50">
 <h3 align="center">3Line Backend Assessment Task</h3>
 
   <p align="center">
@@ -74,12 +74,12 @@ A lightweight REST API that serves user role data — including role name, type,
 
 ### API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/roles` | Fetch all roles |
-| `GET` | `/api/roles?status=Active` | Filter roles by status (`Active` / `Inactive`) |
-| `GET` | `/api/roles?type=DEFAULT` | Filter roles by type (`DEFAULT`, `CUSTOM`, `SYSTEM-CUSTOM`) |
-| `GET` | `/api/roles/:id` | Fetch a single role by ID |
+| Method | Endpoint                   | Description                                                 |
+| ------ | -------------------------- | ----------------------------------------------------------- |
+| `GET`  | `/api/roles`               | Fetch all roles                                             |
+| `GET`  | `/api/roles?status=Active` | Filter roles by status (`Active` / `Inactive`)              |
+| `GET`  | `/api/roles?type=DEFAULT`  | Filter roles by type (`DEFAULT`, `CUSTOM`, `SYSTEM-CUSTOM`) |
+| `GET`  | `/api/roles/:id`           | Fetch a single role by ID                                   |
 
 Interactive documentation is available at:
 
