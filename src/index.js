@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./swagger");
 const rolesRouter = require("./routes/roles");
@@ -6,6 +7,7 @@ const rolesRouter = require("./routes/roles");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.use(cors());
 app.use(express.json());
 
 // Swagger docs
